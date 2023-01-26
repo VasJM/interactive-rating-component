@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://github.com/VasJM/interactive-rating-component)
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://adorable-frangollo-599bd3.netlify.app/)
 
 ## My process
 
