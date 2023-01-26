@@ -1,0 +1,160 @@
+/*** Custom CSS Properties ***/
+:root {
+    --clr-primary-400: hsl(25, 97%, 53%);
+
+    --clr-neutral-900: hsl(216, 12%, 8%);
+    --clr-neutral-875: hsl(215, 27%, 12%);
+    --clr-neutral-850: hsl(215, 20%, 16%);
+    --clr-neutral-800: hsl(213, 19%, 18%);
+    --clr-neutral-300: hsl(216, 12%, 54%);
+    --clr-neutral-200: hsl(217, 12%, 63%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-base: 'Overpass', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-base: 0.9375rem;
+}
+
+/*** CSS Reset ***/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*** General Styles ***/
+body {
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-300);
+    background-color: var(--clr-neutral-900);
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    color: var(--clr-neutral-100);
+    line-height: 1em;
+}
+
+/*** General State Styles ***/
+.state {
+    background: linear-gradient(var(--clr-neutral-850), var(--clr-neutral-875));
+    display: grid;
+    gap: 1em;
+    padding: 1.5em;
+    margin: 0 1em;
+    border-radius: 1em;
+    max-width: 23.5rem;
+    min-height: 25rem;
+}
+
+/*** Rating State Styles ***/
+/* Star Icon */
+.star-icon {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.star-icon::before {
+    content: "";
+    background: no-repeat center url("./images/icon-star.svg");
+    background-color: var(--clr-neutral-800);
+    border-radius: 50%;
+    padding: 0.8em 1.5em;
+}
+
+/* General Button Styles */
+.btn {
+    cursor: pointer;
+}
+
+/* Rating Button Styles */
+.rating-btns {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.rating-btn {
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-300);
+    width: 2.75em;
+    height: 2.65em;
+    border: none;
+    border-radius: 50%;
+}
+
+.rating-btn:hover {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+}
+
+.rating-btn--active {
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-100);
+}
+
+/* Submit Button Styles */
+.submit-btn {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+    border: none;
+    border-radius: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.75em 0;
+}
+
+.submit-btn:hover {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-400);
+}
+
+/*** Thank You State Styles ***/
+.state--thankyou {
+    place-items: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* User Rating Display */
+.text-pill {
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-primary-400);
+    padding: 0.6em 1.25em 0.4em 1.25em;
+    border-radius: 5em;
+}
