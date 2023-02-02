@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/VasJM/interactive-rating-component)
+- [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-Sj6ithKbLB)
 - [Live Site](https://adorable-frangollo-599bd3.netlify.app/)
 
 ## My process
